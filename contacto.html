@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CONTACTO </title>
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/form-styles.css">
+	<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="js/funciones.js"></script>
+</head>
+<body>
+	<header> </header>
+		<nav>
+			<ul>
+
+				<li><a href="index.html">Inicio</a> </li>
+				<li><a href="preguntas.html">Preguntas Frecuentes</a> </li>
+				<li><a href="productos.html">Productos</a> </li>
+				<li><a href="contacto.html">Contacto</a> </li>
+			</ul>
+		</nav>
+
+	<section >
+		<aside  >
+			<div class="list-aside">
+				<ul>
+				<li><a href="#">Nuestros proveedores<a/></li>
+				<li><a href="https://www.royalqueenseeds.com/feminized-cannabis-seeds/224-speedy-chile-fast-flowering.html" target="_blank">Royal Queen Seeds</a></li>
+				<li><a href="https://www.dinafem.org/es/" target="_blank">Dinafem</a></li>
+				<li><a href="https://sensiseeds.com/es" target="_blank">Sensi Seeds</a></li>
+				<li><a href="http://www.buddhaseedbank.com/es/" target="_blank">Buddha Seeds</a></li>
+				<li><a href="https://kundalaseeds.com/" target="_blank">Kundala Seeds</a></li>
+				<li><a href="https://www.biobizz.com/es/" target="_blank">Biobizz</a></li>
+				<li><a href="https://www.plagron.com/es" target="_blank">Plagron</a></li>
+				</ul>
+			</div>
+			
+		</aside>
+			<div class="content-right">
+			<div class="content-form">
+				<form action="respuesta.html" method="post" name="form">
+					<h3 class="h-contact">Formulario de contacto</h3>
+					<p class="text-danger" style="margin-top: 7px;">* Campos obligatorios</p>
+					<div class="form-group">
+						<label>Nombre<span class="text-danger">*</span></label>
+					    <input type="text" name="nombre" placeholder="Ingrese su nombre" class="form-control" >
+					</div>
+
+				    <div class="form-group">
+						<label>Email<span class="text-danger">*</span></label>
+					    <input type="Email" name="email" placeholder="ejemplo@ejemplo.cl" class="form-control" >
+					</div>	
+
+					<div class="form-group">
+						<label>Fecha de nacimiento</label>
+					    <input type="date" name="fecha" class="form-control">
+					</div>
+
+					<div class="form-group">
+						<label>Asunto<span class="text-danger">*</span></label>
+					    <select name="consultas" class="form-control">
+					    	<option value="">Seleccione...</option>
+					    	<option value="cultivos">Consultas cultivos</option>
+					    	<option value="tratamientos">Consultas tratamientos</option>
+					    	<option value="legales">Consultas legales</option>
+					    	<option value="otraconsulta">Otras consultas</option>
+					    </select>
+					</div>
+
+					<div class="form-group">
+						<label>Deje su comentario<span class="text-danger"></span></label>
+						<textarea name="comentario" placeholder="Escribir acá" class="form-control" rows="6"></textarea>
+					</div>
+
+					<div class="form-group">
+						<button type="button" class="btn btn-primary" onclick="validar();">Enviar</button>
+					</div>
+					
+					
+				</form>
+			</div>
+		</div>
+
+
+
+		
+	</section>	
+	<footer>
+		<p class="text-footer">
+			&copy; Segunda evaluación de programación web 2020. Yesennia Bravo
+		</p>
+		
+	</footer>
+	
+</body>
+</html>

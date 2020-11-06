@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CONTACTO </title>
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/form-styles.css">
+	<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#form").validate({
+				rules: {
+					nombre: {
+						required: true,
+						minlength: 5
+					},
+					email: {
+						required: true,
+						email: true,
+					},
+					fecha: {
+						required: true
+					},
+					consultas: {
+						required: true
+					},
+					comentario: {
+						required: true,
+						minlength: 5,
+						maxlength: 50
+					}
+				},
+				messages: {
+					nombre: {
+						required: "El nombre es obligatorio",
+						minlength: "Debe ingresar al menos 5 caracteres"
+					},
+					email: {
+						required: "El email es obligatorio",
+						email: "El email no es correcto"
+					},
+					fecha: {
+						required: "La fecha de nacimiento es obligatoria"
+					},
+					consultas: {
+						required: "Seleccione una comuna"
+					},
+					comentario:{
+						required: "El comentario es obligatorio",
+						minlength: "Debe ingresar al menos 5 caracteres",
+						maxlength: "No puede superar los 50 caracteres"
+					}
+				}
+			});
+
+		});
+
+	</script>
+</head>
+<body>
+	<header> </header>
+		<nav>
+			<ul>
+
+				<li><a href="index.html">Inicio</a> </li>
+				<li><a href="preguntas.html">Preguntas Frecuentes</a> </li>
+				<li><a href="productos.html">Productos</a> </li>
+				<li><a href="contacto.html">Contacto</a> </li>
+			</ul>
+		</nav>
+
+	<section >
+		<aside  >
+			<div class="list-aside">
+				<ul>
+				<li><a href="#">Nuestros proveedores<a/></li>
+				<li><a href="https://www.royalqueenseeds.com/feminized-cannabis-seeds/224-speedy-chile-fast-flowering.html" target="_blank">Royal Queen Seeds</a></li>
+				<li><a href="https://www.dinafem.org/es/" target="_blank">Dinafem</a></li>
+				<li><a href="https://sensiseeds.com/es" target="_blank">Sensi Seeds</a></li>
+				<li><a href="http://www.buddhaseedbank.com/es/" target="_blank">Buddha Seeds</a></li>
+				<li><a href="https://kundalaseeds.com/" target="_blank">Kundala Seeds</a></li>
+				<li><a href="https://www.biobizz.com/es/" target="_blank">Biobizz</a></li>
+				<li><a href="https://www.plagron.com/es" target="_blank">Plagron</a></li>
+				</ul>
+			</div>
+			
+		</aside>
+			<div class="content-right">
+			<div class="content-form">
+				<form action="respuesta.html" method="post" id="form">
+					<h3 class="h-contact">Formulario de contacto</h3>
+					<p class="text-danger" style="margin-top: 7px;">* Campos obligatorios</p>
+					<div class="form-group">
+						<label>Nombre<span class="text-danger">*</span></label>
+					    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" class="form-control" required>
+					</div>
+
+				    <div class="form-group">
+						<label>Email<span class="text-danger">*</span></label>
+					    <input type="Email" id="email" name="email" placeholder="ejemplo@ejemplo.cl" class="form-control" required>
+					</div>	
+
+					<div class="form-group">
+						<label>Fecha de nacimiento</label>
+					    <input type="date" id="fecha" name="fecha" class="form-control" required>
+					</div>
+
+					<div class="form-group">
+						<label>Asunto<span class="text-danger">*</span></label>
+					    <select name="consultas" id="consultas" class="form-control" required>
+					    	<option value="">Seleccione...</option>
+					    	<option value="cultivos">Consultas cultivos</option>
+					    	<option value="tratamientos">Consultas tratamientos</option>
+					    	<option value="legales">Consultas legales</option>
+					    	<option value="otraconsulta">Otras consultas</option>
+					    </select>
+					</div>
+
+					<div class="form-group">
+						<label>Deje su comentario<span class="text-danger"></span></label>
+						<textarea name="comentario" id="comentario" placeholder="Escribir acá" class="form-control" rows="6" required></textarea>
+					</div>
+
+					<div class="form-group">
+						<input type="submit" value="Enviar" class="btn btn-primary">   
+					</div>
+					
+					
+				</form>
+			</div>
+		</div>
+
+
+
+		
+	</section>	
+	<footer>
+		<p class="text-footer">
+			&copy; Segunda evaluación de programación web 2020. Yesennia Bravo
+		</p>
+		
+	</footer>
+	
+</body>
+</html>

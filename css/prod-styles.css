@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+img{
+	height: 140px;
+}
+
+h4{
+	font-family: 'Amatic SC', cursive;
+}
+
+hr{
+	width: 70%;
+	color: #7DE500;
+}
+
+.a-img{
+	color: #fff;
+	font-family: sans-serif;
+	font-family: 'Amatic SC', cursive;
+}
+
+
+.content-prod{
+	width: 88%;
+	float: left;
+	background-color: #000;
+
+}
+
+.img-prod{
+	width: 275px;
+	float: left;
+	text-align: center;
+	margin: 10px;
+	
+}
+
+
+.descripcion{
+	color: #fff;
+	font-style: italic;
+	font-size: 20px;
+	
+}
